@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_playground/AppPages/SplashScreen.dart';
 import 'package:flutter_playground/AppThemes/CustomBGs/customBGs.dart';
 import 'package:flutter_playground/AppThemes/CustomThemes/customThemes.dart';
+import 'package:flutter_playground/AppWidgets/AppTiles.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() => runApp(MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
         initialRoute: '/',
-        theme: CustomAppThemes().blueTheme(),
+        theme: CustomAppThemes().blueTheme(Brightness.light, 500, 500),
         home: SplashScreen(
           useSafeArea: false,
           layout: PageLayout.SplashScreen_Layout01,
